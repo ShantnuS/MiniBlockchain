@@ -6,7 +6,7 @@ A simple blockchain implementation in python!
 
 Clone the repository:
 ```
-git clone https://www.github.com/ShantnuS/MiniBlockchain
+git clone https://github.com/ShantnuS/MiniBlockchain
 ```
 or download the files for the project. 
 
