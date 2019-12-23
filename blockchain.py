@@ -6,7 +6,7 @@ class BlockChain:
         self.add_genesis_block()
     
     def add_genesis_block(self):
-        block = Block(0, "Initial Block", "none")
+        block = Block(0, "Genesis Block", "none")
         self.chain.append(block)
 
     def get_new_index(self):
@@ -24,7 +24,7 @@ class BlockChain:
     
     def verify_chain(self):
         for i in range(len(self.chain)-1):
-            if (self.chain[i].block_hash != self.chain[i+1].previous_hash):
+            if (self.chain[i].hash_block() != self.chain[i+1].previous_hash):
                 return False
         return True
     
